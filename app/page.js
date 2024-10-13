@@ -41,6 +41,8 @@ const howItWorks = [
 
 
 export default function Home() {
+  // Platform landing page
+  
   return (    
     <main className="container mx-auto px-4 py-16">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-12 mb-24">
@@ -48,7 +50,8 @@ export default function Home() {
           <h1 className="text-7xl font-extrabold pb-6 gradient-title">Simplify Your Scheduling</h1>
           <p className="text-xl text-gray-600 mb-10">Scheduler helps you manage your time effectively. Create events, set
             your availability, and let others book time with you seamlessly.</p>
-          <Link href="/dashboard">
+          {/* On click to dashboard Route */}
+          <Link href="/dashboard"> 
             <Button size="lg" className="text-lg">
               Get Started <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
@@ -65,7 +68,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-
+      {/* Displaying the key features of the Application using cards */}
       <div className="mb-24">
         <h2 className="text-3xl font-bold text-center mb-12 text-blue-600">Key Features</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -84,13 +87,15 @@ export default function Home() {
           )
         })}</div>
       </div>
+      {/* Displaying the random default reviews from the users */}
       <div className="mb-24">
         <h2 className="text-3xl font-bold text-center mb-12 text-blue-600">
           What Our Users Say 
         </h2>
-
+        {/* carousel component */}
         <Testimonials />
       </div>
+      {/* Displaying the process of using Application */}
       <div className="mb-24">
         <h2 className="text-3xl font-bold text-center mb-12 text-blue-600">
           How It Works 

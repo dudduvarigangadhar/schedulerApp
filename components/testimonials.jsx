@@ -44,7 +44,7 @@ const testimonials = [
     },
   ];
 
-
+// carousel component 
 const Testimonials = () => {
   return (
     <Carousel 
